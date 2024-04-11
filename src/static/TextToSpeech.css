@@ -1,0 +1,40 @@
+body {
+    background-color: aliceblue;
+}
+.outer-container {
+    width: calc(100% - 70vw);
+    margin: calc(100% - 90vw) auto;
+    text-align: center;
+    background-color: aquamarine;
+    padding: 30px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+}
+
+.textarea {
+    width: 100%;
+    min-width: 500px;
+    /* max-width: 500px; */
+    min-height: 200px;
+    /* max-height: 300px; */
+    font-size: medium;
+}
+
+.convert, .clear {
+    display: inline-block;
+    text-align: center;
+    background-color: cornflowerblue;
+    border: 1px solid #000;
+    border-radius: 5px;
+    padding: 10px 15px;
+    font-weight: 500;
+    margin: 25px 25px 0 25px;
+}
+.convert:hover, .clear:hover {
+    cursor: pointer;
+}
+
+.my-logo {
+    width: 100px;
+    height: 100px;
+}

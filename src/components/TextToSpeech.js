@@ -13,6 +13,7 @@ export default class TextToSpeech extends Component {
             setTimeout(function() {
                 const msg = new SpeechSynthesisUtterance();
                 msg.text = text.value;
+                msg.voice = window.speechSynthesis.getVoices()[4];
                 window.speechSynthesis.speak(msg);
                 button.disabled = false;
               }, 1000);
@@ -36,9 +37,6 @@ export default class TextToSpeech extends Component {
                 <textarea className='textarea'></textarea> <br />
                 <button className='convert' onClick={convert}>Convert to Speech</button>
                 <button className='clear' onClick={clear}>Clear</button>
-                <label for="photo">Choose image</label>
-                <input type="file" name="photo" capture="user" />
-                <input type="file" name="photo" capture="enviroment" />
             </div>
         </div>
       </>

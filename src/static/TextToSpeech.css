@@ -2,7 +2,8 @@ body {
     background-color: aliceblue;
 }
 .outer-container {
-    width: calc(100% - 70vw);
+    width: 70%;
+    max-width: 800px;
     margin: calc(100% - 90vw) auto;
     text-align: center;
     background-color: aquamarine;
@@ -13,10 +14,8 @@ body {
 
 .textarea {
     width: 100%;
-    min-width: 500px;
-    /* max-width: 500px; */
+    max-width: 600px;
     min-height: 200px;
-    /* max-height: 300px; */
     font-size: medium;
 }
 
@@ -37,4 +36,20 @@ body {
 .my-logo {
     width: 100px;
     height: 100px;
+}
+
+@media only screen and (max-width: 767px) {
+    .outer-container {
+        width: 80%;
+        /* margin: calc(100% - 90vw) auto; */
+        text-align: center;
+        background-color: aquamarine;
+        padding: 30px;
+        border: 2px solid #ccc;
+        border-radius: 10px;
+    }
+    .textarea {
+        width: 90%;
+        font-size: medium;
+    }
 }
